@@ -44,22 +44,36 @@ struct ContentView: View {
                     }
                 }
                 .modifier(ScrollingHStackModifier(items: instruments.count, itemWidth: 250, itemSpacing: 30))
-                
-//                Spacer()
-//                HStack {
+            }
+            
+            VStack(alignment: .leading) {
+                Spacer()
                 
                 Toggle(isOn: switchIsOn) {
                     Text("Keep playing sound when app is backgrounded")
                         .foregroundColor(.white)
+                        .font(.footnote)
                 }
-                
-//                    Toggle("Keep playing sound when app is backgrounded", isOn: switchIsOn)
-                    
-
-//                }
-                
-                Text("Hi")
+                .tint(Color.blue)
+                .toggleStyle(.switch)
             }
+            .fixedSize(horizontal: true, vertical: false)
+            
+            VStack(alignment: .trailing) {
+                
+                HStack {
+                    Spacer()
+                    Button {
+                        /// Open info
+                        print("hi")
+                    } label: {
+                        Image(systemName: "questionmark.circle.fill")
+                            .tint(.white)
+                    }
+                }
+                Spacer()
+            }
+            .fixedSize(horizontal: true, vertical: false)
         }
     }
 }
