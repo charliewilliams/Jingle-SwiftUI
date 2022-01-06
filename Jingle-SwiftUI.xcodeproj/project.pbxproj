@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03497052786817E0084C604 /* ScrollingStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03497042786817E0084C604 /* ScrollingStackModifier.swift */; };
+		C0349708278681D60084C604 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0349707278681D60084C604 /* Instrument.swift */; };
+		C034970B2786820C0084C604 /* STKAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C034970A2786820C0084C604 /* STKAudioKit */; };
+		C034970D27868EE30084C604 /* InstrumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034970C27868EE30084C604 /* InstrumentCell.swift */; };
 		C08312D4276FE777002D6BE8 /* Jingle_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08312D3276FE777002D6BE8 /* Jingle_SwiftUIApp.swift */; };
 		C08312D6276FE777002D6BE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08312D5276FE777002D6BE8 /* ContentView.swift */; };
 		C08312D8276FE779002D6BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08312D7276FE779002D6BE8 /* Assets.xcassets */; };
@@ -14,6 +18,11 @@
 		C08312E5276FE779002D6BE8 /* Jingle_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08312E4276FE779002D6BE8 /* Jingle_SwiftUITests.swift */; };
 		C08312EF276FE77A002D6BE8 /* Jingle_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08312EE276FE77A002D6BE8 /* Jingle_SwiftUIUITests.swift */; };
 		C08312F1276FE77A002D6BE8 /* Jingle_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08312F0276FE77A002D6BE8 /* Jingle_SwiftUIUITestsLaunchTests.swift */; };
+		C08312FF276FE7CC002D6BE8 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C08312FE276FE7CC002D6BE8 /* AudioKit */; };
+		C0E77D772770D613002E3F21 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E77D762770D613002E3F21 /* CategoryRow.swift */; };
+		C0E77D7A2770D634002E3F21 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E77D792770D634002E3F21 /* Sound.swift */; };
+		C0E77D7F27713192002E3F21 /* Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E77D7E27713192002E3F21 /* Motion.swift */; };
+		C0E77D8127713213002E3F21 /* AudioHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E77D8027713213002E3F21 /* AudioHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C03497042786817E0084C604 /* ScrollingStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingStackModifier.swift; sourceTree = "<group>"; };
+		C0349707278681D60084C604 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
+		C034970C27868EE30084C604 /* InstrumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentCell.swift; sourceTree = "<group>"; };
 		C08312D0276FE777002D6BE8 /* Jingle-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jingle-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08312D3276FE777002D6BE8 /* Jingle_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jingle_SwiftUIApp.swift; sourceTree = "<group>"; };
 		C08312D5276FE777002D6BE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +56,10 @@
 		C08312EA276FE77A002D6BE8 /* Jingle-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jingle-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08312EE276FE77A002D6BE8 /* Jingle_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jingle_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		C08312F0276FE77A002D6BE8 /* Jingle_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jingle_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0E77D762770D613002E3F21 /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		C0E77D792770D634002E3F21 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		C0E77D7E27713192002E3F21 /* Motion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
+		C0E77D8027713213002E3F21 /* AudioHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08312FF276FE7CC002D6BE8 /* AudioKit in Frameworks */,
+				C034970B2786820C0084C604 /* STKAudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +113,13 @@
 			isa = PBXGroup;
 			children = (
 				C08312D3276FE777002D6BE8 /* Jingle_SwiftUIApp.swift */,
+				C0E77D7D2771316C002E3F21 /* Motion */,
+				C0E77D7C27713166002E3F21 /* Audio */,
+				C0E77D782770D628002E3F21 /* Model */,
 				C08312D5276FE777002D6BE8 /* ContentView.swift */,
+				C03497042786817E0084C604 /* ScrollingStackModifier.swift */,
+				C0E77D762770D613002E3F21 /* CategoryRow.swift */,
+				C034970C27868EE30084C604 /* InstrumentCell.swift */,
 				C08312D7276FE779002D6BE8 /* Assets.xcassets */,
 				C08312D9276FE779002D6BE8 /* Preview Content */,
 			);
@@ -127,6 +151,31 @@
 			path = "Jingle-SwiftUIUITests";
 			sourceTree = "<group>";
 		};
+		C0E77D782770D628002E3F21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0E77D792770D634002E3F21 /* Sound.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0E77D7C27713166002E3F21 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C0E77D8027713213002E3F21 /* AudioHandler.swift */,
+				C0349707278681D60084C604 /* Instrument.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		C0E77D7D2771316C002E3F21 /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				C0E77D7E27713192002E3F21 /* Motion.swift */,
+			);
+			path = Motion;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +192,10 @@
 			dependencies = (
 			);
 			name = "Jingle-SwiftUI";
+			packageProductDependencies = (
+				C08312FE276FE7CC002D6BE8 /* AudioKit */,
+				C034970A2786820C0084C604 /* STKAudioKit */,
+			);
 			productName = "Jingle-SwiftUI";
 			productReference = C08312D0276FE777002D6BE8 /* Jingle-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +268,10 @@
 				Base,
 			);
 			mainGroup = C08312C7276FE777002D6BE8;
+			packageReferences = (
+				C08312FD276FE7CC002D6BE8 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				C03497092786820C0084C604 /* XCRemoteSwiftPackageReference "STKAudioKit" */,
+			);
 			productRefGroup = C08312D1276FE777002D6BE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +314,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C034970D27868EE30084C604 /* InstrumentCell.swift in Sources */,
+				C03497052786817E0084C604 /* ScrollingStackModifier.swift in Sources */,
 				C08312D6276FE777002D6BE8 /* ContentView.swift in Sources */,
+				C0E77D8127713213002E3F21 /* AudioHandler.swift in Sources */,
+				C0E77D772770D613002E3F21 /* CategoryRow.swift in Sources */,
+				C0349708278681D60084C604 /* Instrument.swift in Sources */,
 				C08312D4276FE777002D6BE8 /* Jingle_SwiftUIApp.swift in Sources */,
+				C0E77D7F27713192002E3F21 /* Motion.swift in Sources */,
+				C0E77D7A2770D634002E3F21 /* Sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +669,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C03497092786820C0084C604 /* XCRemoteSwiftPackageReference "STKAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/STKAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C08312FD276FE7CC002D6BE8 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C034970A2786820C0084C604 /* STKAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C03497092786820C0084C604 /* XCRemoteSwiftPackageReference "STKAudioKit" */;
+			productName = STKAudioKit;
+		};
+		C08312FE276FE7CC002D6BE8 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C08312FD276FE7CC002D6BE8 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C08312C8276FE777002D6BE8 /* Project object */;
 }
