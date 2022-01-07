@@ -14,6 +14,8 @@ class Motion {
     
     private let manager = CMMotionManager()
     
+    private let filter = HighpassFilter(sampleRate: 1/60.0, cutoff: 5)
+    
     private lazy var queue: OperationQueue = {
         let q = OperationQueue()
         q.qualityOfService = .userInteractive
@@ -68,7 +70,9 @@ private extension Motion {
     
     func gotMotion(_ motion: CMDeviceMotion) {
         
-        let mag = magnitude(from: motion.userAcceleration)
+        filter.add(acceleration: motion.userAcceleration)
+        
+        let mag = magnitude(from: CMAcceleration(x: filter.lastX, y: filter.lastY, z: filter.lastZ))
         onMotion.forEach { $0(mag) }
     }
 }

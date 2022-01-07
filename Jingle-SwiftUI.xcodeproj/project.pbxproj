@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C003C43F2788EE6E00274858 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003C43E2788EE6E00274858 /* SettingsStore.swift */; };
+		C003C4422788F5E400274858 /* MotionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003C4412788F5E400274858 /* MotionFilter.swift */; };
 		C03497052786817E0084C604 /* ScrollingStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03497042786817E0084C604 /* ScrollingStackModifier.swift */; };
 		C0349708278681D60084C604 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0349707278681D60084C604 /* Instrument.swift */; };
 		C034970B2786820C0084C604 /* STKAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C034970A2786820C0084C604 /* STKAudioKit */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		C003C43E2788EE6E00274858 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		C003C4412788F5E400274858 /* MotionFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionFilter.swift; sourceTree = "<group>"; };
 		C03497042786817E0084C604 /* ScrollingStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingStackModifier.swift; sourceTree = "<group>"; };
 		C0349707278681D60084C604 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
 		C034970C27868EE30084C604 /* InstrumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentCell.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				C0E77D7E27713192002E3F21 /* Motion.swift */,
+				C003C4412788F5E400274858 /* MotionFilter.swift */,
 			);
 			path = Motion;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				C034970D27868EE30084C604 /* InstrumentCell.swift in Sources */,
 				C03497052786817E0084C604 /* ScrollingStackModifier.swift in Sources */,
+				C003C4422788F5E400274858 /* MotionFilter.swift in Sources */,
 				C08312D6276FE777002D6BE8 /* ContentView.swift in Sources */,
 				C0E77D8127713213002E3F21 /* AudioHandler.swift in Sources */,
 				C0E77D772770D613002E3F21 /* CategoryRow.swift in Sources */,
