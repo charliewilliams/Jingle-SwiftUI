@@ -25,39 +25,47 @@ struct Instrument: Identifiable {
     let name: String
     let index: Int
     let image: Image
-    let inst: STKAudioKit.STKBase
+    let inst: STKAudioKit.Shaker
+    let type: ShakerType
     
     init(name: InstrumentName) {
         
         self.name = name.rawValue.capitalized
         self.index = InstrumentName.allCases.firstIndex(of: name)!
+        self.inst = STKAudioKit.Shaker()
         
         switch name {
         case .jingle:
             image = Image("Sleigh_Bells")
-            inst = STKAudioKit.Shaker()
+            type = .sleighBells
             
         case .maracas:
             image = Image("Maracas")
-            inst = STKAudioKit.Shaker()
+            type = .maraca
             
         case .tambourine:
             image = Image("Tambourine")
-            inst = STKAudioKit.Shaker()
+            type = .tambourine
             
         case .shaker:
             image = Image("Egg_Shaker")
-            inst = STKAudioKit.Shaker()
+            type = .sandPaper
             
         case .spaceWater:
             image = Image("Space_Water")
-            inst = STKAudioKit.Shaker()
+            type = .waterDrops
             
         case .spaceIce:
             image = Image("Space_Water2")
-            inst = STKAudioKit.Shaker()
-            
+            type = .bambooChimes
         }
+        
+        AudioHandler.shared.mixer.addInput(inst)
+        inst.start()
+//        inst.play()
     }
     
+    func motion(magnitude: Double) {
+        inst.trigger(type: type, amplitude: min(1, magnitude))
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C003C43F2788EE6E00274858 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003C43E2788EE6E00274858 /* SettingsStore.swift */; };
 		C03497052786817E0084C604 /* ScrollingStackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03497042786817E0084C604 /* ScrollingStackModifier.swift */; };
 		C0349708278681D60084C604 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0349707278681D60084C604 /* Instrument.swift */; };
 		C034970B2786820C0084C604 /* STKAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C034970A2786820C0084C604 /* STKAudioKit */; };
@@ -16,8 +17,6 @@
 		C08312D8276FE779002D6BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08312D7276FE779002D6BE8 /* Assets.xcassets */; };
 		C08312DB276FE779002D6BE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08312DA276FE779002D6BE8 /* Preview Assets.xcassets */; };
 		C08312E5276FE779002D6BE8 /* Jingle_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08312E4276FE779002D6BE8 /* Jingle_SwiftUITests.swift */; };
-		C08312EF276FE77A002D6BE8 /* Jingle_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08312EE276FE77A002D6BE8 /* Jingle_SwiftUIUITests.swift */; };
-		C08312F1276FE77A002D6BE8 /* Jingle_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08312F0276FE77A002D6BE8 /* Jingle_SwiftUIUITestsLaunchTests.swift */; };
 		C08312FF276FE7CC002D6BE8 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C08312FE276FE7CC002D6BE8 /* AudioKit */; };
 		C0E77D772770D613002E3F21 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E77D762770D613002E3F21 /* CategoryRow.swift */; };
 		C0E77D7A2770D634002E3F21 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E77D792770D634002E3F21 /* Sound.swift */; };
@@ -33,29 +32,20 @@
 			remoteGlobalIDString = C08312CF276FE777002D6BE8;
 			remoteInfo = "Jingle-SwiftUI";
 		};
-		C08312EB276FE77A002D6BE8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C08312C8276FE777002D6BE8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C08312CF276FE777002D6BE8;
-			remoteInfo = "Jingle-SwiftUI";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C003C43E2788EE6E00274858 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		C03497042786817E0084C604 /* ScrollingStackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingStackModifier.swift; sourceTree = "<group>"; };
 		C0349707278681D60084C604 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
 		C034970C27868EE30084C604 /* InstrumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentCell.swift; sourceTree = "<group>"; };
-		C08312D0276FE777002D6BE8 /* Jingle-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jingle-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C08312D0276FE777002D6BE8 /* Jingle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jingle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08312D3276FE777002D6BE8 /* Jingle_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jingle_SwiftUIApp.swift; sourceTree = "<group>"; };
 		C08312D5276FE777002D6BE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C08312D7276FE779002D6BE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C08312DA276FE779002D6BE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C08312E0276FE779002D6BE8 /* Jingle-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jingle-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C08312E0276FE779002D6BE8 /* Jingle-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jingle-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08312E4276FE779002D6BE8 /* Jingle_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jingle_SwiftUITests.swift; sourceTree = "<group>"; };
-		C08312EA276FE77A002D6BE8 /* Jingle-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jingle-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C08312EE276FE77A002D6BE8 /* Jingle_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jingle_SwiftUIUITests.swift; sourceTree = "<group>"; };
-		C08312F0276FE77A002D6BE8 /* Jingle_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jingle_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C0E77D762770D613002E3F21 /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		C0E77D792770D634002E3F21 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		C0E77D7E27713192002E3F21 /* Motion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motion.swift; sourceTree = "<group>"; };
@@ -79,13 +69,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C08312E7276FE77A002D6BE8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,7 +77,6 @@
 			children = (
 				C08312D2276FE777002D6BE8 /* Jingle-SwiftUI */,
 				C08312E3276FE779002D6BE8 /* Jingle-SwiftUITests */,
-				C08312ED276FE77A002D6BE8 /* Jingle-SwiftUIUITests */,
 				C08312D1276FE777002D6BE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,9 +84,8 @@
 		C08312D1276FE777002D6BE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C08312D0276FE777002D6BE8 /* Jingle-SwiftUI.app */,
-				C08312E0276FE779002D6BE8 /* Jingle-SwiftUITests.xctest */,
-				C08312EA276FE77A002D6BE8 /* Jingle-SwiftUIUITests.xctest */,
+				C08312D0276FE777002D6BE8 /* Jingle.app */,
+				C08312E0276FE779002D6BE8 /* Jingle-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,19 +123,11 @@
 			path = "Jingle-SwiftUITests";
 			sourceTree = "<group>";
 		};
-		C08312ED276FE77A002D6BE8 /* Jingle-SwiftUIUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C08312EE276FE77A002D6BE8 /* Jingle_SwiftUIUITests.swift */,
-				C08312F0276FE77A002D6BE8 /* Jingle_SwiftUIUITestsLaunchTests.swift */,
-			);
-			path = "Jingle-SwiftUIUITests";
-			sourceTree = "<group>";
-		};
 		C0E77D782770D628002E3F21 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C0E77D792770D634002E3F21 /* Sound.swift */,
+				C003C43E2788EE6E00274858 /* SettingsStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C08312CF276FE777002D6BE8 /* Jingle-SwiftUI */ = {
+		C08312CF276FE777002D6BE8 /* Jingle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C08312F4276FE77A002D6BE8 /* Build configuration list for PBXNativeTarget "Jingle-SwiftUI" */;
+			buildConfigurationList = C08312F4276FE77A002D6BE8 /* Build configuration list for PBXNativeTarget "Jingle" */;
 			buildPhases = (
 				C08312CC276FE777002D6BE8 /* Sources */,
 				C08312CD276FE777002D6BE8 /* Frameworks */,
@@ -191,18 +164,18 @@
 			);
 			dependencies = (
 			);
-			name = "Jingle-SwiftUI";
+			name = Jingle;
 			packageProductDependencies = (
 				C08312FE276FE7CC002D6BE8 /* AudioKit */,
 				C034970A2786820C0084C604 /* STKAudioKit */,
 			);
 			productName = "Jingle-SwiftUI";
-			productReference = C08312D0276FE777002D6BE8 /* Jingle-SwiftUI.app */;
+			productReference = C08312D0276FE777002D6BE8 /* Jingle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C08312DF276FE779002D6BE8 /* Jingle-SwiftUITests */ = {
+		C08312DF276FE779002D6BE8 /* Jingle-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C08312F7276FE77A002D6BE8 /* Build configuration list for PBXNativeTarget "Jingle-SwiftUITests" */;
+			buildConfigurationList = C08312F7276FE77A002D6BE8 /* Build configuration list for PBXNativeTarget "Jingle-Tests" */;
 			buildPhases = (
 				C08312DC276FE779002D6BE8 /* Sources */,
 				C08312DD276FE779002D6BE8 /* Frameworks */,
@@ -213,28 +186,10 @@
 			dependencies = (
 				C08312E2276FE779002D6BE8 /* PBXTargetDependency */,
 			);
-			name = "Jingle-SwiftUITests";
+			name = "Jingle-Tests";
 			productName = "Jingle-SwiftUITests";
-			productReference = C08312E0276FE779002D6BE8 /* Jingle-SwiftUITests.xctest */;
+			productReference = C08312E0276FE779002D6BE8 /* Jingle-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C08312E9276FE77A002D6BE8 /* Jingle-SwiftUIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C08312FA276FE77A002D6BE8 /* Build configuration list for PBXNativeTarget "Jingle-SwiftUIUITests" */;
-			buildPhases = (
-				C08312E6276FE77A002D6BE8 /* Sources */,
-				C08312E7276FE77A002D6BE8 /* Frameworks */,
-				C08312E8276FE77A002D6BE8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C08312EC276FE77A002D6BE8 /* PBXTargetDependency */,
-			);
-			name = "Jingle-SwiftUIUITests";
-			productName = "Jingle-SwiftUIUITests";
-			productReference = C08312EA276FE77A002D6BE8 /* Jingle-SwiftUIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -250,10 +205,6 @@
 						CreatedOnToolsVersion = 13.1;
 					};
 					C08312DF276FE779002D6BE8 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = C08312CF276FE777002D6BE8;
-					};
-					C08312E9276FE77A002D6BE8 = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = C08312CF276FE777002D6BE8;
 					};
@@ -276,9 +227,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C08312CF276FE777002D6BE8 /* Jingle-SwiftUI */,
-				C08312DF276FE779002D6BE8 /* Jingle-SwiftUITests */,
-				C08312E9276FE77A002D6BE8 /* Jingle-SwiftUIUITests */,
+				C08312CF276FE777002D6BE8 /* Jingle */,
+				C08312DF276FE779002D6BE8 /* Jingle-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,13 +250,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C08312E8276FE77A002D6BE8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -322,6 +265,7 @@
 				C0349708278681D60084C604 /* Instrument.swift in Sources */,
 				C08312D4276FE777002D6BE8 /* Jingle_SwiftUIApp.swift in Sources */,
 				C0E77D7F27713192002E3F21 /* Motion.swift in Sources */,
+				C003C43F2788EE6E00274858 /* SettingsStore.swift in Sources */,
 				C0E77D7A2770D634002E3F21 /* Sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,27 +278,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C08312E6276FE77A002D6BE8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C08312EF276FE77A002D6BE8 /* Jingle_SwiftUIUITests.swift in Sources */,
-				C08312F1276FE77A002D6BE8 /* Jingle_SwiftUIUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		C08312E2276FE779002D6BE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C08312CF276FE777002D6BE8 /* Jingle-SwiftUI */;
+			target = C08312CF276FE777002D6BE8 /* Jingle */;
 			targetProxy = C08312E1276FE779002D6BE8 /* PBXContainerItemProxy */;
-		};
-		C08312EC276FE77A002D6BE8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C08312CF276FE777002D6BE8 /* Jingle-SwiftUI */;
-			targetProxy = C08312EB276FE77A002D6BE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -489,14 +419,15 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.charliewilliams.Jingle-SwiftUI";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.charliewilliams.shakers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -518,14 +449,15 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.charliewilliams.Jingle-SwiftUI";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.charliewilliams.shakers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -583,52 +515,6 @@
 			};
 			name = Release;
 		};
-		C08312FB276FE77A002D6BE8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N2WM6EN8GQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.charliewilliams.Jingle-SwiftUIUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Jingle-SwiftUI";
-			};
-			name = Debug;
-		};
-		C08312FC276FE77A002D6BE8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N2WM6EN8GQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.charliewilliams.Jingle-SwiftUIUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Jingle-SwiftUI";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -641,7 +527,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C08312F4276FE77A002D6BE8 /* Build configuration list for PBXNativeTarget "Jingle-SwiftUI" */ = {
+		C08312F4276FE77A002D6BE8 /* Build configuration list for PBXNativeTarget "Jingle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C08312F5276FE77A002D6BE8 /* Debug */,
@@ -650,20 +536,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C08312F7276FE77A002D6BE8 /* Build configuration list for PBXNativeTarget "Jingle-SwiftUITests" */ = {
+		C08312F7276FE77A002D6BE8 /* Build configuration list for PBXNativeTarget "Jingle-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C08312F8276FE77A002D6BE8 /* Debug */,
 				C08312F9276FE77A002D6BE8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C08312FA276FE77A002D6BE8 /* Build configuration list for PBXNativeTarget "Jingle-SwiftUIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C08312FB276FE77A002D6BE8 /* Debug */,
-				C08312FC276FE77A002D6BE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

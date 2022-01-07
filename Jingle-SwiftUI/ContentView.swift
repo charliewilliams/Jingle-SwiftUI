@@ -9,11 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var switchIsOn = Binding.constant(true)
+    @ObservedObject var settingsStore = SettingsStore()
     
     let instruments: [Instrument] = {
         InstrumentName.allCases.map { Instrument(name: $0) }
     }()
+    
+    let motion = Motion.shared
+    
+    let scrollingHStackModifier: ScrollingHStackModifier
+    
+    init() {
+        scrollingHStackModifier = ScrollingHStackModifier(items: instruments.count, itemWidth: 250, itemSpacing: 30)
+    }
     
     var body: some View {
         ZStack {
@@ -38,18 +46,19 @@ struct ContentView: View {
                     ForEach(instruments) {
                         InstrumentCell(instrument: $0)
                             .frame(width: 250, height: 400, alignment: .center)
-                            .border(Color.white, width: 4)
                             .cornerRadius(10)
                             .shadow(radius: 20)
+                            .overlay(RoundedRectangle(cornerRadius: 10)
+                                        .stroke(.white, lineWidth: 4))
                     }
                 }
-                .modifier(ScrollingHStackModifier(items: instruments.count, itemWidth: 250, itemSpacing: 30))
+                .modifier(scrollingHStackModifier)
             }
             
             VStack(alignment: .leading) {
                 Spacer()
                 
-                Toggle(isOn: switchIsOn) {
+                Toggle(isOn: $settingsStore.keepPlayingAudioInBackground) {
                     Text("Keep playing sound when app is backgrounded")
                         .foregroundColor(.white)
                         .font(.footnote)
@@ -74,6 +83,12 @@ struct ContentView: View {
                 Spacer()
             }
             .fixedSize(horizontal: true, vertical: false)
+        }
+        .onAppear {
+            motion.addOnMotion { mag in
+                instruments[scrollingHStackModifier.index].motion(magnitude: mag)
+            }
+            motion.start()
         }
     }
 }

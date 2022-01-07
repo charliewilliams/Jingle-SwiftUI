@@ -16,6 +16,8 @@ struct ScrollingHStackModifier: ViewModifier {
     var itemWidth: CGFloat
     var itemSpacing: CGFloat
     
+    @State var index: Int = 0
+    
     init(items: Int, itemWidth: CGFloat, itemSpacing: CGFloat) {
         self.items = items
         self.itemWidth = itemWidth
@@ -73,6 +75,7 @@ struct ScrollingHStackModifier: ViewModifier {
                     scrollOffset = newOffset
                 }
                 
+                self.index = Int(index)
             })
             )
     }

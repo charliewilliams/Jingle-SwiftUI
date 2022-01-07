@@ -20,9 +20,10 @@ struct InstrumentCell: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 instrument.image
-                    .border(.white, width :2)
                     .clipShape(Circle())
                     .shadow(radius: 5)
+                    .overlay(Circle().stroke(.white, lineWidth: 2))
+                
                 Text(instrument.name)
                     .font(.title)
                     .foregroundColor(.white)

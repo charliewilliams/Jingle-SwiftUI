@@ -12,8 +12,6 @@ class Motion {
 
     private var onMotion: [((Double)->Void)] = []
     
-    static let shared = Motion()
-    
     private let manager = CMMotionManager()
     
     private lazy var queue: OperationQueue = {
@@ -22,10 +20,14 @@ class Motion {
         return q
     }()
     
+    static let shared = Motion()
+    
     private init() {
         
-        NotificationCenter.default.addObserver(self, selector: #selector(stop), name: UIApplication.didEnterBackgroundNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(start), name: UIApplication.willEnterForegroundNotification, object: nil)
+        if !SettingsStore().keepPlayingAudioInBackground {
+            NotificationCenter.default.addObserver(self, selector: #selector(stop), name: UIApplication.didEnterBackgroundNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(start), name: UIApplication.willEnterForegroundNotification, object: nil)
+        }
         
         start()
     }
