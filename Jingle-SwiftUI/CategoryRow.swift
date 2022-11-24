@@ -23,23 +23,12 @@ struct CategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 40) {
                     ForEach(self.items) { sound in
-//                        NavigationLink(
-//                            destination: LandmarkDetail(
-//                                landmark: landmark
-//                            )
-//                        ) {
                             CategoryItem(sound: sound)
-//                        }
                     }
                 }
-//                .alignmentGuide(.leading) { viewDimensions in
-//                    (viewDimensions.width - 185) / 2
-//                }
             }
             .frame(height: 185)
             .padding(.leading, 75)
-//            .listRowInsets(EdgeInsets(top: 0, leading: 70, bottom: 0, trailing: 0))
-//            Spacer()
         }
     }
 }

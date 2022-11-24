@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C08312CF276FE777002D6BE8"
-               BuildableName = "Jingle-SwiftUI.app"
+               BuildableName = "Jingle.app"
                BlueprintName = "Jingle"
                ReferencedContainer = "container:Jingle-SwiftUI.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C08312DF276FE779002D6BE8"
-               BuildableName = "Jingle-SwiftUITests.xctest"
+               BuildableName = "Jingle-Tests.xctest"
                BlueprintName = "Jingle-Tests"
                ReferencedContainer = "container:Jingle-SwiftUI.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C08312CF276FE777002D6BE8"
-            BuildableName = "Jingle-SwiftUI.app"
+            BuildableName = "Jingle.app"
             BlueprintName = "Jingle"
             ReferencedContainer = "container:Jingle-SwiftUI.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C08312CF276FE777002D6BE8"
-            BuildableName = "Jingle-SwiftUI.app"
+            BuildableName = "Jingle.app"
             BlueprintName = "Jingle"
             ReferencedContainer = "container:Jingle-SwiftUI.xcodeproj">
          </BuildableReference>

@@ -490,7 +490,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jingle-SwiftUI.app/Jingle-SwiftUI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jingle.app/Jingle";
 			};
 			name = Debug;
 		};
@@ -515,7 +515,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jingle-SwiftUI.app/Jingle-SwiftUI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jingle.app/Jingle";
 			};
 			name = Release;
 		};
@@ -557,7 +557,7 @@
 			repositoryURL = "https://github.com/AudioKit/STKAudioKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 6.0.0;
 			};
 		};
 		C08312FD276FE7CC002D6BE8 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
@@ -565,7 +565,7 @@
 			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 6.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
