@@ -14,7 +14,7 @@ class Motion {
     
     private let manager = CMMotionManager()
     
-    private let filter = HighpassFilter(sampleRate: 1/60.0, cutoff: 5)
+    private let filter = HighpassFilter(sampleRate: 1/60.0, cutoff: 5, adaptive: true)
     
     private lazy var queue: OperationQueue = {
         let q = OperationQueue()
@@ -51,6 +51,13 @@ class Motion {
     @objc func stop() {
         
         manager.stopDeviceMotionUpdates()
+    }
+    
+    @objc func didBackground() {
+        
+        if !SettingsStore().keepPlayingAudioInBackground {
+            stop()
+        }
     }
     
     func addOnMotion(_ block: @escaping (Double)->Void) {

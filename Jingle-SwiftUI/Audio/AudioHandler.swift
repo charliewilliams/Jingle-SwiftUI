@@ -16,10 +16,17 @@ class AudioHandler {
     
     static let shared = AudioHandler()
     
+    let instruments: [Instrument]
+    
     private init() {
         
-        engine.output = mixer
+        instruments = InstrumentName.allCases.map { Instrument(name: $0) }
         
+        for instrument in instruments {
+            mixer.addInput(instrument.inst)
+        }
+        
+        engine.output = mixer
         start()
     }
     

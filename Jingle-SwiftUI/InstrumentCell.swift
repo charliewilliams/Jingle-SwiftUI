@@ -14,7 +14,6 @@ struct InstrumentCell: View {
     var body: some View {
         
         ZStack {
-//            Color.white
             Image("background", bundle: nil)
                 .resizable()
                 .edgesIgnoringSafeArea(.all)

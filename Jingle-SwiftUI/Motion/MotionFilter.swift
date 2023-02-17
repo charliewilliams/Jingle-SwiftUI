@@ -14,7 +14,7 @@ class AccelerometerFilter {
     var x: Double = 0
     var y: Double = 0
     var z: Double = 0
-    var adaptive = true
+    var adaptive: Bool
     
     let rate: Double
     let filterConstant: Double
@@ -23,9 +23,10 @@ class AccelerometerFilter {
         "Base Class"
     }
     
-    init(sampleRate: Double, cutoff: Double) {
+    init(sampleRate: Double, cutoff: Double, adaptive: Bool) {
         
         rate = sampleRate
+        self.adaptive = adaptive
         
         let dt = 1.0 / rate
         let RC = 1.0 / cutoff

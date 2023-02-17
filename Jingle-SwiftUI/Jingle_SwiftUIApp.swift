@@ -15,6 +15,7 @@ struct Jingle_SwiftUIApp: App {
     @Environment(\.scenePhase) var scenePhase
     
     let audio = AudioHandler.shared
+    let motion = Motion.shared
     
     init() {
         
@@ -40,10 +41,13 @@ struct Jingle_SwiftUIApp: App {
                 audio.didBackground()
                 
             case .inactive:
-                audio.stop()
+//                audio.stop()
+//                motion.stop()
+                break
                 
             case .active:
                 audio.start()
+                motion.start()
                 
             @unknown default:
                 fatalError("New thing here")

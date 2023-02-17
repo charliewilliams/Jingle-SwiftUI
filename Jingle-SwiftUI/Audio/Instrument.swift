@@ -60,12 +60,18 @@ struct Instrument: Identifiable {
             type = .bambooChimes
         }
         
-        AudioHandler.shared.mixer.addInput(inst)
         inst.start()
 //        inst.play()
+        
+//        inst.scheduleMIDIEvent(event: MIDIEvent(programChange: <#T##MIDIByte#>, channel: <#T##MIDIChannel#>))
     }
     
     func motion(magnitude: Double) {
-        inst.trigger(type: type, amplitude: min(1, magnitude))
+        
+        if magnitude > 0.02 {
+//            inst.trigger(note: 64, velocity: UInt8(min(127, magnitude * 127)))
+            
+            inst.trigger(type: type, amplitude: min(1, magnitude))
+        }
     }
 }
